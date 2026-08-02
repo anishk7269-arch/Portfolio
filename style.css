@@ -69,15 +69,11 @@ header{
 
 
     list-style:none;
-
     gap:30px;
 
 }
-
 .nav-links a{
-
     color:white;
-
     text-decoration:none;
 
 }
@@ -316,47 +312,32 @@ header{
 
 .contact-form input,
 .contact-form textarea{
-
     padding:15px;
-
     border:none;
-
     border-radius:10px;
-
     background:#1e293b;
-
     color:white;
 
 }
 
 .contact-form textarea{
-
     height:150px;
-
     resize:none;
 
 }
 
 .contact-form button{
-
     padding:15px;
-
     background:#38bdf8;
-
     color:white;
-
     border:none;
-
     border-radius:10px;
-
     cursor:pointer;
-
     font-size:16px;
 
 }
 
 .contact-form button:hover{
-
     background:#0ea5e9;
 
 }
@@ -364,11 +345,8 @@ header{
 footer{
 
     background:#111827;
-
     text-align:center;
-
     padding:30px;
-
 }
 #theme-toggle{
     background:#38bdf8;
@@ -698,5 +676,19 @@ footer{
     .hero-image img{
         width:180px;
         height:180px;
+    }
+}
+
+/*=================*/
+#typing-text{
+    color:#38bdf8;
+    font-weight:bold;
+    border-right:3px solid white;
+    padding-right:5px;
+    animation: blink .7s infinite;
+}
+@keyframes blink{
+    50%{
+        border-color:transparent;
     }
 }
