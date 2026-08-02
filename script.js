@@ -86,8 +86,8 @@ const contactForm = document.getElementById("contact-form");
 contactForm.addEventListener("submit", function (e) {
     e.preventDefault();
     emailjs.send("service_9mclhwk", "template_8vmeqgr", {
-    from_name: document.getElementById("from_name").value,
-    from_email: document.getElementById("from_email").value,
+    name: document.getElementById("from_name").value,
+    email: document.getElementById("from_email").value,
     message: document.getElementById("message").value
 })
     .then(function () {
