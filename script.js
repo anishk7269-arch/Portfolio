@@ -118,16 +118,3 @@ window.onclick = function (event) {
     }
 }
 
-//==============================
-const menuBtn = document.getElementById("menu-btn");
-const navLinksMenu = document.getElementById("nav-links");
-
-menuBtn.addEventListener("click", () => {
-    navLinksMenu.classList.toggle("show");
-});
-
-document.querySelectorAll(".nav-links a").forEach(link=>{
-    link.addEventListener("click",()=>{
-        navLinksMenu.classList.remove("show");
-    });
-});
