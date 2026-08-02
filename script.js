@@ -85,11 +85,11 @@ window.addEventListener("scroll", () => {
 const contactForm = document.getElementById("contact-form");
 contactForm.addEventListener("submit", function (e) {
     e.preventDefault();
-    emailjs.send("service_9mclhwk", "template_01517jz", {
-        from_name: document.getElementById("from_name").value,
-        from_email: document.getElementById("from_email").value,
-        message: document.getElementById("message").value
-    })
+    emailjs.send("service_9mclhwk", "template_8vmeqgr", {
+    from_name: document.getElementById("from_name").value,
+    from_email: document.getElementById("from_email").value,
+    message: document.getElementById("message").value
+})
     .then(function () {
         alert("✅ Message sent successfully!");
         contactForm.reset();
