@@ -448,3 +448,28 @@ footer{
 .hero-btn:hover{
     background:#0ea5e9;
 }
+
+
+.contact-info p{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin:18px 0;
+    font-size:18px;
+}
+
+.contact-info i{
+    color:#38bdf8;
+    font-size:22px;
+    width:28px;
+}
+
+.contact-info a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.contact-info a:hover{
+    color:#38bdf8;
+}
