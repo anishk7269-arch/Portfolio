@@ -75,34 +75,28 @@ window.addEventListener("scroll", () => {
 
 
 // EmailJS Initialize
-emailjs.init("kEzvU82UQOMc0d18g");
+(function () {
+    emailjs.init({
+        publicKey: "kEzvU82UQOMc0d18g",
+    });
+})();
 
 // Contact Form
 const contactForm = document.getElementById("contact-form");
-
 contactForm.addEventListener("submit", function (e) {
-
     e.preventDefault();
-
     emailjs.send("service_9mclhwk", "template_01517jz", {
         from_name: document.getElementById("from_name").value,
         from_email: document.getElementById("from_email").value,
         message: document.getElementById("message").value
     })
     .then(function () {
-
         alert("✅ Message sent successfully!");
-
         contactForm.reset();
-
     })
     .catch(function (error) {
-
         alert("❌ Failed to send message.");
-
         console.log(error);
-
     });
-
 });
 
