@@ -175,12 +175,34 @@
             <p>💻 Available for internships and freelance projects.</p>
         </div>
       
-  <form class="contact-form">
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+
+ <form id="contact-form" class="contact-form">
+    <input
+        type="text"
+        id="from_name"
+        name="from_name"
+        placeholder="Your Name"
+        required
+    >
+    <input
+        type="email"
+        id="from_email"
+        name="from_email"
+        placeholder="Your Email"
+        required
+    >
+    <textarea
+        id="message"
+        name="message"
+        placeholder="Your Message"
+        required
+    ></textarea>
+    <button type="submit">
+        Send Message
+    </button>
+</form>
+
+
     </div>
 </section>
 
@@ -189,6 +211,9 @@
 </footer>
 
     <script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
 
 </body>
 
