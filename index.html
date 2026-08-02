@@ -13,19 +13,27 @@
 <body>
 	<header>
 
-    <nav class="navbar">
+ <nav class="navbar">
 
-        <h2 class="logo">Anish Kumar</h2>
-<ul class="nav-links">
-	<li><a href="#hero">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#certificates">Certificates</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-</ul>   <button id="theme-toggle">🌙</button>
+    <h2 class="logo">Anish Kumar</h2>
 
-    </nav>
+    <!-- NEW -->
+    <button class="menu-btn" id="menu-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button id="theme-toggle">🌙</button>
+
+</nav>
 
 </header>
 
@@ -272,6 +280,7 @@ onclick="openCertificate('certificates/chatgpt.jpg')">
 <div id="certificateModal" class="modal">
     <span class="close-modal">&times;</span>
     <img class="modal-content" id="modalImage">
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>

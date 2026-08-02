@@ -584,3 +584,119 @@ footer{
     cursor:pointer;
     font-weight:bold;
 }
+
+
+/* ================= MOBILE ================= */
+
+.menu-btn{
+    display:none;
+    background:none;
+    border:none;
+    color:#fff;
+    font-size:28px;
+    cursor:pointer;
+}
+/* Tablet */
+@media (max-width:992px){
+    .navbar{
+        padding:15px 30px;
+    }
+    .hero{
+        padding:70px 40px;
+    }
+}
+
+/* Mobile */
+@media (max-width:768px){
+    .menu-btn{
+        display:block;
+        order:3;
+    }
+    #theme-toggle{
+        order:2;
+    }
+    .navbar{
+        padding:15px 20px;
+        position:relative;
+    }
+.nav-links{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#111827;
+    display:none;
+    flex-direction:column;
+    align-items:center;
+    padding:20px 0;
+    gap:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+}
+
+.nav-links.show{
+    display:flex;
+}
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding:50px 20px;
+    }
+    .hero-content,
+    .hero-image{
+        width:100%;
+    }
+    .hero-image img{
+        width:220px;
+        height:220px;
+    }
+    .hero-buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+    .about{
+        padding:70px 20px;
+    }
+    .about-container{
+        flex-direction:column;
+        text-align:center;
+    }
+    .about-image img{
+        width:220px;
+    }
+    .skills,
+    .projects,
+    .certificates,
+    .contact{
+        padding:70px 20px;
+    }
+    .skills-container,
+    .projects-container,
+    .certificate-grid{
+        grid-template-columns:1fr;
+    }
+    .contact-container{
+        flex-direction:column;
+    }
+    .section-title{
+        font-size:30px;
+    }
+}
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+    .logo{
+        font-size:22px;
+    }
+    .hero-content h1{
+        font-size:30px;
+    }
+    .hero-content h2{
+        font-size:22px;
+    }
+    .hero-image img{
+        width:180px;
+        height:180px;
+    }
+}
