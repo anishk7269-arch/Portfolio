@@ -20,6 +20,7 @@
 	<li><a href="#hero">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
+    <li><a href="#certificates">Certificates</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
 </ul>   <button id="theme-toggle">🌙</button>
@@ -140,6 +141,41 @@
 </section>
 
 
+<section id="certificates" class="certificates">
+
+    <h2 class="section-title">My Certifications</h2>
+    <p class="section-subtitle">Courses and certifications that showcase my continuous learning journey.</p>
+    <div class="certificate-grid">
+       
+ <!-- Certificate 1 -->
+        <div class="certificate-card">
+            <img src="certificates/hp-life.jpg" alt="HP LIFE Certificate">
+            <div class="certificate-content">
+                <h3>AI for Beginners</h3>
+                <p>HP LIFE Foundation</p>
+               <button class="view-btn"
+onclick="openCertificate('certificates/hp-life.jpg')">
+👁 View Certificate
+</button>
+            </div>
+        </div>
+        
+<!-- Certificate 2 -->
+        <div class="certificate-card">
+            <img src="certificates/chatgpt.jpg" alt="ChatGPT Certificate">
+            <div class="certificate-content">
+                <h3>Master in ChatGPT</h3>
+                <p>Dhruv Rathee</p>
+               <button class="view-btn"
+onclick="openCertificate('certificates/chatgpt.jpg')">
+👁 View Certificate
+</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <section id="projects" class="projects hidden">
     <h2 class="section-title">My Projects</h2>
     <div class="projects-container">
@@ -163,6 +199,7 @@
         </div>
     </div>
 </section>
+
 
 
 <section id="contact" class="contact hidden">
@@ -231,9 +268,14 @@
     <p>© 2026 Anish Kumar | All Rights Reserved</p>
 </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- Certificate Modal -->
+<div id="certificateModal" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="script.js"></script>
 
 </body>
-
 </html>

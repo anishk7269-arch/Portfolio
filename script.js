@@ -100,3 +100,21 @@ contactForm.addEventListener("submit", function (e) {
     });
 });
 
+// ===== Certificate Popup =====
+
+const modal = document.getElementById("certificateModal");
+const modalImg = document.getElementById("modalImage");
+const closeBtn = document.querySelector(".close-modal");
+function openCertificate(imageSrc) {
+    modal.style.display = "flex";
+    modalImg.src = imageSrc;
+}
+closeBtn.onclick = function () {
+    modal.style.display = "none";
+}
+window.onclick = function (event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+}
+
